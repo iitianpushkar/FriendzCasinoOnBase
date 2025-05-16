@@ -72,6 +72,10 @@ A room-based multiplayer on-chain casino** built on **Base**—where friends gat
 
 ---
 
+##  Deployments
+- Frontend : https://friendzcasino-on-base.vercel.app/
+- Smart Contract(Base Sepolia) : 0x1cccf3b8ed254d2913d62793993925e8a8007a4f
+- Backend Server : Deployed on AWS   
 ## 🚀 Future Additions
 
 - 🎲 New Games: Dice, Roulette, Blackjack, etc.   
