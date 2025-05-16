@@ -23,21 +23,21 @@ console.log("contract:", contract);
 
  function listenToStart() {
 
-      contract.on('GameStartedEvent', (room,leader,mines,gems,bet) => {
+      contract.on('GameStartedEvent', async (room,leader,mines,gems,bet) => {
       console.log(`🏆 Game started: Room ${room}, leader ${leader}, mines${mines}, gems${gems}, bet${bet}`);
-      commitHash(contract,room, mines);  
+      await commitHash(contract,room, mines);  
     });
   }
 
   function listenToReveal(){
 
-    contract.on('MineRevealEvent', (room) => {
+    contract.on('MineRevealEvent', async (room) => {
       console.log(`💣 Mine to be revealed for : Room ${room}`);
       if (roomMinesMap[room]) {
         const mines = roomMinesMap[room];
         console.log(`Mines for room ${room}:`, mines);
 
-        submitMines(contract, room, mines);
+        await submitMines(contract, room, mines);
           
         delete roomMinesMap[room];
       } else {
