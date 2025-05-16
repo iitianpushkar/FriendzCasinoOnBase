@@ -11,6 +11,7 @@ import {abi} from "@/app/abi";
 import { usePollContract } from "@/app/lib/usePollContract";
 import {useContract} from "@/app/lib/contract";
 import Image from "next/image";
+import { toast } from "react-hot-toast";
 
 type RoomData = [string, boolean, number, number, bigint, boolean, boolean, string, bigint];
 
@@ -117,6 +118,9 @@ export default function RoomMines() {
             setGems(0);
           console.log(`Game over! Room ID: ${room}, Winner: ${winners},Score: ${score}`);
           setMessage("Game Over! Winner: " + winners + " Score: " + score);
+          toast.success(`Game Over!`, {
+            icon: '🎉',
+          });
           setShowModal(true);
           }
         });
@@ -134,6 +138,9 @@ export default function RoomMines() {
           if(room==roomId){
          // console.log(`🏆 Game started by leader ${leader}`);
           setMessage("Game started!");
+          toast.success(`Game Started!`, {
+            icon: '🎉',
+          });
           }
           }
         );
