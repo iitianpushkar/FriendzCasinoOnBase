@@ -17,6 +17,7 @@ export default function HomeSidebar() {
     toast.success(`Room created at ${room}`, {
       icon: '🎉',
     });
+    console.log(`Room created at ${room} by ${leader} with amount ${amount}`);
     }
 
   })

@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import JoinRoomModal from "./joinRoomModal";
-import {useContract} from "@/app/lib/contract";
-import {useAccount } from "wagmi";
 
 
 export default function HomeMain() {
