@@ -21,6 +21,9 @@ A room-based multiplayer on-chain casino** built on **Base**—where friends gat
 
 ---
 
+## Architecture
+![Architecture](/frontend/public/Casino.png)
+
 ## 🎮 Current Game: Mines
 
 ### 🕹️ Game Workflow
