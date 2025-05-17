@@ -99,4 +99,26 @@ A cryptographically fair version of the classic “Mines” game – now multipl
 
 - 🎲 Add more games: Dice, Roulette, Blackjack, and more  
 - 📊 Leaderboards, stats, and achievements  
-- 📱 Fully responsive, mobile-friendly UI  
+- 📱 Fully responsive, mobile-friendly UI
+
+---
+
+## 🔄 Built on Both Solana and Base — Why Base Stands Out
+
+While the core architecture and gameplay of **FriendzCasino** remain consistent across **Solana** and **Base**, building on Base introduced key advantages that enhance user experience and accessibility:
+
+### 🌟 What Makes the Base Version Unique?
+
+- **Smart Wallets with Account Abstraction**  
+  On Base, users don’t need to manage traditional seed phrases or wallets. They can sign up using passkeys or familiar authentication methods, making it much more welcoming for non-crypto-native users.
+
+- **Gasless Transactions via Paymasters**  
+  Unlike Solana, where users still need SOL for transactions, Base enables **gasless UX** through Paymasters. This allows players to interact with the dApp **without needing ETH**, drastically improving onboarding and retention.
+
+- **Smoother Onboarding**  
+  The combination of passkey-based wallet creation and sponsored transactions significantly reduces friction. It turns what used to be a “crypto-heavy” experience into a web2-like flow—perfect for casual gamers.
+
+### ✅ Same Game, Better UX
+
+Though both versions follow the same room-based multiplayer architecture, the Base implementation goes further in **reducing user complexity**, making it ideal for mass adoption.
+
